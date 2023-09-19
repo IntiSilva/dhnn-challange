@@ -16,7 +16,7 @@ const Hero = () => {
     <>
       {/* Mobile */}
       <section className="w-full h-full pt-[70px] lg:hidden">
-        <Image src={Background} />
+        <Image src={Background} alt=""/>
         <div className="px-4 py-8">
           <h2 className="text-xs text-neutral-400 font-bold uppercase tracking-[3px]">
             Lorem Ipsum
@@ -67,6 +67,7 @@ const Hero = () => {
               src={isOpen ? ArrowClose : ArrowOpen}
               width={24}
               height={24}
+              alt=""
             />
           </button>
         </div>

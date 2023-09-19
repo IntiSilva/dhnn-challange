@@ -5,7 +5,8 @@
 @layer base {
   body {
     @apply bg-white
-  }}
+  }
+
 
 .nav-underline::after{
   @apply content-[''] bg-aeronex h-[2px] w-[0%] left-0 bottom-0 absolute duration-300
@@ -34,6 +35,7 @@
 
 }
 
+
 .slide-down {
   transition: opacity  0.3s ease-out;
   opacity: 0;
@@ -48,4 +50,5 @@
 }
 .slide-up.active {
   opacity: 0;
+}
 }

@@ -14,7 +14,7 @@ module.exports = {
         "xxl": "1366px",
       },
       backgroundImage: {
-        'hero-background': "url('../../public/Image1.jpg')"
+        'hero-background': "url('../../public/assets/Image1.jpg')"
       }
     },
   },

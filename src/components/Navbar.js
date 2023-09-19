@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full h-[70px] xl:h-[89px] bg-white xl:px-16 xxl:px-24 justify-between items-center inline-flex z-50 ">
       <div className="items-center flex ml-2 xl:mr-3">
-        <Image src={AeroNexIcon} />
+        <Image src={AeroNexIcon} alt=""/>
         <h1 className="text-blue-800 text-[32px] font-bold">Aero</h1>
         <h1 className="text-blue-400 text-[32px] font-bold">Nex</h1>
       </div>
@@ -99,7 +99,7 @@ const Navbar = () => {
         <div className="flex ml-6">
           <div className="flex justify-center items-center border-l border-gray-300 p-4">
             <button>
-              <Image src={asterisk} />
+              <Image src={asterisk} alt="" />
             </button>
           </div>
           <div className=" flex justify-center items-center border-l border-gray-300 p-4">
@@ -113,7 +113,7 @@ const Navbar = () => {
       {/*Mobile*/}
       <div className="xl:hidden flex items-center h-full border-l border-gray-300 mr-5 pl-5">
         <button onClick={toggleMenu}>
-          <Image src={HamburgerIcon} />
+          <Image src={HamburgerIcon} alt=""/>
         </button>
       </div>
       {/* Dropdown content */}
@@ -124,63 +124,63 @@ const Navbar = () => {
             className="flex items-center justify-between mx-4 py-6 border-b border-gray-300"
           >
             Nosotros
-            <Image src={ChevronIcon} />
+            <Image src={ChevronIcon} alt=""/>
           </Link>
           <Link
             href="/novedades"
             className="flex items-center justify-between mx-4 py-6 border-b border-gray-300"
           >
             Novedades
-            <Image src={ChevronIcon} />
+            <Image src={ChevronIcon} alt=""/>
           </Link>
           <Link
             href="/inversores"
             className="flex items-center justify-between mx-4 py-6 border-b border-gray-300"
           >
             Inversores
-            <Image src={ChevronIcon} />
+            <Image src={ChevronIcon} alt=""/>
           </Link>
           <Link
             href="/sumate-al-equipo"
             className="flex items-center justify-between mx-4 py-6 border-b border-gray-300"
           >
             Sumate al equipo
-            <Image src={ChevronIcon} />
+            <Image src={ChevronIcon} alt=""/>
           </Link>
           <Link
             href="/productos-y-servicios"
             className="flex items-center justify-between mx-4 py-6 border-b border-gray-300"
           >
             Productos y Servicios
-            <Image src={ChevronIcon} />
+            <Image src={ChevronIcon} alt=""/>
           </Link>
           <Link
             href="/proovedores"
             className="flex items-center justify-between mx-4 py-6 border-b border-gray-300"
           >
             Proovedores
-            <Image src={ChevronIcon} />
+            <Image src={ChevronIcon} alt=""/>
           </Link>
           <Link
             href="/asterisco"
             className="flex items-center justify-between mx-4 py-6 border-b border-gray-300"
           >
             Asterisco
-            <Image src={ChevronIcon} />
+            <Image src={ChevronIcon} alt=""/>
           </Link>
           <Link
             href="/español"
             className="flex items-center justify-between mx-4 py-6 border-b border-gray-300"
           >
             Español
-            <Image src={ChevronIcon} />
+            <Image src={ChevronIcon} alt=""/>
           </Link>
           <Link
             href="/sitios"
             className="flex items-center justify-between mx-4 py-6 "
           >
             Sitios
-            <Image src={ChevronIcon} />
+            <Image src={ChevronIcon} alt=""/>
           </Link>
         </ul>
       </div>

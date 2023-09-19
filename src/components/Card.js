@@ -8,6 +8,7 @@ const Card = ({ cardImage }) => {
           <Image
             src={cardImage}
             className="rounded-lg w-96 h-72 object-cover"
+            alt=""
           />
         </div>
         <div className="row-span-2">

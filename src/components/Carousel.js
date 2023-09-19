@@ -1,3 +1,5 @@
+/* eslint-disable react/display-name */
+
 import Carousel from "react-multi-carousel";
 import Card from "./Card";
 import "react-multi-carousel/lib/styles.css";
@@ -18,10 +20,10 @@ const CustomButtonGroup = ({ next, previous, carouselState }) => {
         <span className="text-neutral-400 pl-1">0{totalItems}</span>
       </div>
       <button onClick={() => previous()}>
-        <Image src={arrowBlue} />
+        <Image src={arrowBlue} alt="" />
       </button>
       <button onClick={() => next()} className="pl-6">
-        <Image src={arrowGray} />
+        <Image src={arrowGray} alt="" />
       </button>
     </div>
   );
