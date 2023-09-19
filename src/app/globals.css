@@ -2,26 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+  body {
+    @apply bg-white
+  }}
+
+.nav-underline::after{
+  @apply content-[''] bg-aeronex h-[2px] w-[0%] left-0 bottom-0 absolute duration-300
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.nav-underline:hover::after{
+  @apply w-[100%]
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.dropdown-menu{
+  @apply  fixed top-[70px] left-0 w-full h-[0%] overflow-hidden ease-out duration-300
+}
+
+.dropdown-menu.open{
+  @apply h-auto bg-white border-t border-gray-300 z-10 border-b border-b-aeronex
+}
+
+.item-carousel{
+  @apply pl-4 lg:pl-8
+}
+
+
+
+.custom-button-group {
+  @apply w-[100%] flex items-center justify-start pl-8 pt-6 xl:pl-[550px] xl:justify-center
+
+}
+
+.slide-down {
+  transition: opacity  0.3s ease-out;
+  opacity: 0;
+}
+.slide-down.active {
+  opacity: 1;
+}
+
+.slide-up {
+  transition: opacity  0.3s ease-out;
+  opacity: 1;
+}
+.slide-up.active {
+  opacity: 0;
 }
